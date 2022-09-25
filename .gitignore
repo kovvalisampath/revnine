@@ -1,0 +1,9 @@
+# build files
+out/
+build/
+bin/
+
+# vs and vscode
+.vs/
+.vscode/
+
