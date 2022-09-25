@@ -1,25 +1,25 @@
 ﻿#include "revnine.hxx"
 
 /**
- * @brief Find the probablity of two integers in {1,...,n} are coprime.
+ * @brief testing.
 */
 
 int main()
 {
-	size_t n = NULL;
-	std::cout << "Enter n: ";
-	std::cin >> n;
+	int64_t x = NULL;
+	int64_t y = NULL;
+	int64_t a = 34;
+	int64_t b = 126;
 
-	size_t count = NULL;
-	for (size_t a = 1; a < n + 1; a++)
+	if (a == NULL && b == NULL)
 	{
-		for (size_t b = a + 1; b < n + 1; b++)
-		{
-			if (gcd(a, b) == 1) count++;
-		}
+		std::cout << "Enter a, b: ";
+		std::cin >> a >> b;
 	}
 
-	count = 2 * count + 1;
-	std::cout << count / (double(n) * n) << std::endl;
+	if (a < b) std::swap(a, b);
+
+	std::cout << "The gcd of " << a << ", " << b << "is: " << gcd(a, b, x, y) << std::endl;
+	std::cout << x << ", " << y << std::endl;
 
 }

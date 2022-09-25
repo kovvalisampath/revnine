@@ -1,6 +1,6 @@
 ﻿/**
 * @file revnine.hxx
-* @brief a file for usual purpose
+* @brief header file for Entry point of the application	
 */
 
 #pragma once
